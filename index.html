@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>My socket app</title>
+</head>
+<body>
+<!-- Remember this is a pretend file -->
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- Here's the real deal -->
+<script>
+  // Connect to remote websocket endpoint
+  var socket = io('http://localhost:8000');
+  // Send some data
+  socket.emit('upload', {name: 'Tressa', age: 30, status: 'Out' });
+</script>
+</body>
+</html>
