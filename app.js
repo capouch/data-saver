@@ -30,6 +30,7 @@ io.on('connection', function (socket) {
   //                WAIT HERE for upload events to occur
   //
   //
+  // (Note we're not really waiting--this is all event driven by socket.io)
   socket.on('upload', function(data) {
     console.log(data);
     // Let's try to save it in the database
