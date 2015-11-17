@@ -1,4 +1,4 @@
-// Set up server, hook on processors for sockets and files
+// Set up server, hook on processors for websockets, files, and Mongo
 var app = require('http').createServer(handler);
 var io = require('socket.io')(app);
 var fs = require('fs');
